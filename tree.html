@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="JQeasyui/easyui.css">
+    <link rel="stylesheet" href="JQeasyui/icon.css">
+    <script src="JQeasyui/jquery.min.js"></script>
+    <script src="JQeasyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+<table id="QQ" class="easyui-treegrid" style="width:600px;height:400px"
+       data-options="url:'get_data.php',idField:'id',treeField:'name'">
+    <thead>
+    <tr>
+        <th data-options="field:'name',width:180">Task Name</th>
+        <th data-options="field:'persons',width:60,align:'right'">Persons</th>
+        <th data-options="field:'begin',width:80">Begin Date</th>
+        <th data-options="field:'end',width:80">End Date</th>
+    </tr>
+    </thead>
+</table>
+<table id="tt" style="width:600px;height:400px"></table>
+</body>
+<script type="text/javascript" >
+    $('#tt').treegrid({
+        url:'get_data.php',
+        idField:'id',
+        treeField:'name',
+        columns:[[
+            {title:'Task Name',field:'name',width:180},
+            {field:'persons',title:'Persons',width:60,align:'right'},
+            {field:'begin',title:'Begin Date',width:80},
+            {field:'end',title:'End Date',width:80}
+        ],
+            [
+            {title:'Task Name',field:'name',width:180},
+                {field:'persons',title:'Persons',width:60,align:'right'},
+                {field:'begin',title:'Begin Date',width:80},
+                {field:'end',title:'End Date',width:80}
+            ]
+        ]
+    });
+
+</script>
+
+</html>

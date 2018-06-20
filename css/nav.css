@@ -1,0 +1,308 @@
+/*为了随屏幕改变大小，body依然能铺满屏幕（子元素的宽度已经超过100%body的宽度）*/
+body{
+    width:1349px;
+
+}
+.header-left .item{
+    float: left;
+    margin: 6px;
+}
+.header-left{
+    display: inline-block;
+}
+.header-right{
+    display: inline-block;
+    float: right;
+}
+.header-right ul li{
+    float: right;
+    line-height: 33px;
+    padding: 0 10px;
+    text-align: center;
+    position: relative;
+}
+.header-right ul li a{
+    display: block;
+    height: 33px;
+    width: 80px;
+}
+.header-right ul li a:hover{
+    background: white;
+}
+.header-right ul li ul li {
+    float: none;
+    background: white;
+    margin-top: 2px;
+    font-size: small;
+}
+.header-right ul li ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 33px;
+}
+.header-right ul li:hover ul{
+    display: block;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.header-right .web-nav{
+    width: 1100px;
+
+    padding-left: 10px;
+}
+.header-right .web-nav .hot,.market,.help{
+    width: 300px;
+    height: 240px;
+    background: white;
+    border-right: 1px solid #5e5e5e;
+}
+.header-right .web-nav a{
+    background: #66512c;
+    text-underline: none;
+    width: 100px;
+    display: inline-block;
+    color: black;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+.nav_panel1{
+    background-color: #9d9d9d;
+    height: 33px;
+
+
+}
+.nav_panel{
+    height: 800px;
+}
+.nav_panel a{
+    color: black;
+}
+/*容器*/
+.public-container{
+    width: 1100px;
+    margin: 0 auto;
+
+}
+/**导航*/
+.nav_menu{
+    position: fixed;
+    display: none;
+    top: 120px;
+    width: 32px;
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    text-align: center;
+}
+
+.nav_menu:hover{
+    display: block;
+
+    width: 40px;
+}
+.nav_menu .item{
+    font-size: 16px;
+    width: 32px;
+    height: 40px;
+    margin-top: 6px;
+    border: 1px solid #66512c;
+    background: #f2dede;
+}
+/**置顶搜索框*/
+.index-search{
+    position: fixed;
+    top: 0;
+    width: 1349px;
+    height: 80px;
+    background: #a94442;
+    display: none;
+}
+.index-search .sear{
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.index-search .logo{
+    font-weight: bolder;
+    margin-left: 48px;
+    width: 126px;
+    padding-top: 10px;
+    display: inline-block;
+}
+.shop-menu{
+
+    position: fixed;
+    width: 36px;
+    top: 0;
+    right: 0;
+    height:609px;
+    background: #5e5e5e;
+}
+.shop-menu a{
+    display: inline-block;
+    margin-top: 20px;
+}
+/**.shop-menu .VIP{
+    margin-top: 300px;
+    display: inline-block;
+    background: url("../image/vip.png") no-repeat;
+    width: 32px;
+    height: 36px;
+}*/
+.shop-menu .me{
+    margin-top: 40px;
+    width: 34px;
+    height: 36px;
+}
+.shop-menu .shop{
+
+    width: 34px;
+    height: 36px;
+}
+.header-banner{
+    height: 240px;
+}
+.header-banner input{
+    border: 2px solid #a94442;
+    width: 600px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.header-banner .key{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.header-banner .key .item{
+    margin-right: 10px;
+    float: left;
+}
+.index-menu .the-menu{
+    width: 200px;
+    height: 36px;
+    background: #761c19;
+    font-size: 24px;
+
+    text-align: center;
+    padding-top:6px;
+}
+.the-menu h5{
+    color: white;
+}
+.index-menu a{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    background: white;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/*轮播图*/
+.ad{
+    height: 320px;
+    overflow: hidden;
+    position:relative;
+}
+.ad img{
+    width: 800px;
+    height: 314px;
+}
+.ad .menu-list {
+    width: 200px;
+    height: 320px;
+    background: #5e5e5e;
+}
+.ad .menu-list ul li{
+    display: block;
+    height: 32px;
+    width: 200px;
+    position: relative;
+}
+.ad .menu-list ul li a{
+    display: inline-block;
+    text-align: center;
+    margin:0 10px;
+    height: 32px;
+}
+.ad .menu-list ul li:hover{
+    background: white;
+}
+.ad .menu-list ul li img{
+    display: inline-block;
+
+    width: 20px;
+    height: 24px;
+}
+/*商品列表*/
+.ad .menu-list .list{
+    width: 800px;
+}
+.ad .menu-list ul li ul li {
+    float: none;
+    background: white;
+    margin-top: 2px;
+    font-size: small;
+}
+.ad .menu-list ul li ul li a{
+    height:20px;
+    width: 80px;
+    margin: 10px 10px;
+    font-size: 16px;
+}
+.ad .menu-list ul li ul{
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 1030px;
+    height: 314px;
+}
+.ad .menu-list ul li:hover ul{
+    display: block;
+}
+.ad .menu-list .list .two-list{
+    width: 600px;
+}
+.ad .menu-list .list .two-list h3{
+    display: inline-block;
+    margin: 10px 30px;
+}
+.ad .menu-list .list .menu-brand{
+    position: absolute;
+    left: 700px;
+    top:0;
+    width: 280px;
+    height: 314px;
+}
+.ad .menu-list .list .menu-brand a{
+   display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.ad .menu-list .list .menu-brand img{
+    width: 80px;
+    height: 80px;
+}
+.nav_panel .nav2-header{
+
+}
+.nav_panel .nav2-header .logo img{
+    width: 214px;
+    height: 23px;
+}
+/*<!--为了解除置顶菜单而出现的被覆盖区域-->*/
+.top-sreach{
+    height: 144px;
+}
